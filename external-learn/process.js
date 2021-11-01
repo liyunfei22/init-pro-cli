@@ -1,6 +1,6 @@
 const process = require('process')
 console.log('...')
-console.log(process.env)
+console.log(process.argv)
 console.log(process.cpuUsage())
 process.on('beforeExit', (code) => {
   console.log('code=', code)

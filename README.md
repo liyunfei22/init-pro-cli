@@ -1,6 +1,25 @@
-# 初始化项目cli小工具
+# 初始化项目的nodeCli小工具
 
 ## 使用
+
+```shell
+Usage: init-pro-cli <command> [option]
+
+Options:
+  -V, --version                output the version number
+  -V, --version                output the version number
+  -h, --help                   display help for command
+
+Commands:
+  create [options] <app-name>  create a new project
+  help [command]               display help for command
+```
+
+## 知识点
+
+process
+
+child_process
 
 ### 参考
 
