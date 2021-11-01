@@ -1,0 +1,17 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "mac本地",
+      "username": "root",
+      "password": "12345678",
+      "database": "test"
+    }
+  ]
+}
