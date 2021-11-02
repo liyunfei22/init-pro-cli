@@ -43,11 +43,8 @@ function makePackageJson (prodName) {
   return JSON.stringify(pkg, null, 2)
 }
 module.exports = async function (cwd, prodName) {
-  console.log('cwd',cwd, 'prodName', prodName)
   const { selections } = await question(list)
   const packageJson = makePackageJson(prodName)
-  console.log(selections)
-  console.log(cwd)
   const packageJsonPath = path.join(cwd, 'package.json')
   const gitIgnorePath = path.join(cwd, '.gitignore')
 
