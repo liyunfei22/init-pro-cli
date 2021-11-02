@@ -56,19 +56,19 @@ module.exports = async function (cwd, prodName) {
 
     const child = spawn.sync('git', ['init'], { cwd: cwd, stdio: 'inherit' })
     await fs.writeFile(gitIgnorePath, `
-      node_modules
-      .DS_Store
-      design
-      *.log
-      packages/test
-      dist
-      temp
-      .vuerc
-      .version
-      .versions
-      .changelog
-      package-lock.json
-      .vscode
+    node_modules
+    .DS_Store
+    design
+    *.log
+    packages/test
+    dist
+    temp
+    .vuerc
+    .version
+    .versions
+    .changelog
+    package-lock.json
+    .vscode
     `)
     const gitAdd = spawn.sync('git', ['add', '-A'], { cwd: cwd, stdio: 'inherit' })
     const gitCom = spawn.sync('git', ['commit', '-m', 'feat: init'], { cwd: cwd, stdio: 'inherit' })
