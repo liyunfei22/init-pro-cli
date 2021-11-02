@@ -2,16 +2,11 @@
 // 原生模块
 const path = require('path')
 const fs = require('fs');
-// 三方工具
-const fse = require('fs-extra')
-// cross-spawn 跨平台 shell 工具
-const spawn = require('cross-spawn');
 // 命令
 const { Command } = require('commander');
 const program = new Command();
 // 美化工具
 const chalk = require('chalk')
-const inquirer = require('inquirer')
 const create = require('./create')
 
 program
@@ -22,7 +17,7 @@ program
   .action((name, options) => {
 
     // 打印命令行输入的值
-    console.log("project name is " + chalk.bold(name))
+    console.log("project name is " + chalk.blue(name))
     create(name, options)
   })
 program
